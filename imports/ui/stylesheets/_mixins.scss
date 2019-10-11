@@ -1,0 +1,8 @@
+//
+// MIXINS
+//
+
+@mixin text-uppercase {
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+}

@@ -1,0 +1,17 @@
+//
+// BOOTSTRAP
+//
+
+// Variable overrides
+// Must be declared before importing Bootstrap
+$theme-colors: (
+  'primary': #321200,
+  'secondary': #761025,
+  'link': #9b1c83,
+
+);
+
+
+$font-family-sans-serif: 'Josefin Sans', sans-serif;
+
+@import '{}/node_modules/bootstrap/scss/bootstrap';

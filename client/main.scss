@@ -1,0 +1,63 @@
+//
+// CUSTOM FONTS
+//
+
+
+//
+// VENDOR
+// Styles from 3rd party libraries like Bootstrap
+//
+
+@import "{}/imports/ui/stylesheets/bootstrap";
+
+//
+// VARIABLES
+// Global variables specific to this application
+//
+
+@import "{}/imports/ui/stylesheets/variables";
+
+//
+// MIXINS
+// Global Sass mixins specific to this application
+//
+
+@import "{}/imports/ui/stylesheets/mixins";
+
+//
+// COMMON
+// Global styles shared across the entire application
+//
+
+@import "{}/imports/ui/stylesheets/common";
+
+//
+// COMPONENTS
+// Styles for specific components
+//
+
+@import "{}/imports/ui/components/navbar/navbar";
+@import "{}/imports/ui/components/header/header";
+@import "{}/imports/ui/components/footer/footer";
+@import "{}/imports/ui/components/submitquote/submitquote";
+
+
+//
+// LAYOUTS
+// Styles for specific layouts
+//
+
+//
+// PAGES
+// Styles for specific pages
+//
+
+@import "{}/imports/ui/pages/home/home";
+
+
+//
+// UTILITIES
+// Useful global utlity classes specific to this application
+//
+
+@import "{}/imports/ui/stylesheets/utilities";
