@@ -6,6 +6,9 @@ import '../../ui/components/navbar/navbar.js';
 import '../../ui/components/header/header.js';
 import '../../ui/components/footer/footer.js';
 import '../../ui/components/submitquote/submitquote.js';
+import '../../ui/components/cards/cards.js';
+import '../../ui/components/gallery/gallery.js';
+import '../../ui/components/about/about.js';
 
 // Import needed templates
 import '../../ui/layouts/body/body.js';

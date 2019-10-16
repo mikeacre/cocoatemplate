@@ -1,0 +1,30 @@
+#phase, #phase1{
+  max-height: 20rem;
+  display: none;
+}
+
+.home{
+  max-height: 20rem;
+  overflow: hidden;
+}
+
+
+
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}

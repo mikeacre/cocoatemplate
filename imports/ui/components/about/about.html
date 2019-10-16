@@ -1,0 +1,135 @@
+<template name="About">
+  <div class="container-fluid p-4">
+    <div class="row justify-content-center">
+    <img src={{logo}} class="img-fluid" alt="">
+    <img src={{logo}} class="img-fluid d-none d-md-block" alt="">
+    <img src={{logo}} class="img-fluid d-none d-md-block" alt="">
+    <img src={{logo}} class="img-fluid d-none d-md-block" alt="">
+    <img src={{logo}} class="img-fluid d-none d-lg-block" alt="">
+    <img src={{logo}} class="img-fluid d-none d-lg-block" alt="">
+    <img src={{logo}} class="img-fluid d-none d-xl-block" alt="">
+    <img src={{logo}} class="img-fluid d-none d-xl-block" alt="">
+    </div>
+
+    <div class="row">
+      <h1 class="display-2">Cocoa Decor</h1>
+    </div>
+
+
+
+    <div class="row pt-4 base">
+
+    <div class="col-md-12 d-flex flex-column"  id="base">
+      <div class="container main">
+
+
+      <div class="row main">
+        <!-- trying to put in selectors to get to each section -->
+        <!-- <div class="col-md-1 my-auto sideMenu">
+
+            <button class="btn btn-warning w-50">
+              <a href='#base'></a>
+            </button>
+            <button class="btn btn-warning w-50">
+              <a href='#second'></a>
+            </button>
+            <button class="btn btn-warning w-50">
+              <a href='#full'></a>
+            </button>
+        </div> -->
+        <div class="col-md-4 d-none d-md-block">
+          <img src="/img/basecake.png" class="img-fluid" alt="">
+        </div>
+      <div class="col-md-4">
+        <div class="row pl-4">
+        <h1 class="display-4">Our Base</h1>
+        <div class="w-100"></div>
+        <strong>Who we are!</strong>
+        </div>
+        <div class="w-100"></div>
+          <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our</p>
+
+      </div>
+        <div class="col-lg-4 d-flex card-deck">
+          <div class="card col-sm-6">
+        <img src={{person}} class="img-fluid card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Person1</h5>
+            <p class="card-text">I do stuff that person2 does too</p>
+          </div>
+          </div>
+
+          <div class="card col-sm-6">
+        <img src={{person}} class="img-fluid card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Person2</h5>
+          <p class="card-text">I do person2 stuff</p>
+        </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="row main">
+        <div class="col-md-4 d-none d-md-block">
+          <img src="/img/inspocake.png" class="img-fluid" alt="">
+        </div>
+      <div class="col-md-4">
+        <h1 class="display-4">Our Inspiration</h1>
+        <strong>How we got here</strong>
+        <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our</p>
+      </div>
+      <div class="col-md-4 w-100 ">
+        <div>
+          <img src='/img/logo.png' alt=''>
+        </div>
+      </div>
+      </div>
+
+      <div class="row main">
+        <div class="col-md-4 d-none d-md-block">
+          <img src="/img/fullcake.png" class="img-fluid" alt="">
+
+        </div>
+      <div class="col-md-4">
+        <h1 class="display-4">Our Style</h1>
+        <strong>How we got here</strong>
+        <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our</p>
+      </div>
+      <div class="col-md-4 w-100">
+        <div>
+          <img src='/img/logo.png' alt=''>
+        </div>
+      </div>
+      </div>
+
+      </div>
+
+      {{> contact}}
+
+    </div>
+
+    </div>
+  </div>
+</template>
+
+<template name="contact">
+  <div class="row contact mx-auto align-items-end">
+  <div>
+    <h1> Contact Us</h1>
+    <a href="tel: {{phone.num}}">
+    <img src={{phone.img}} class="footer-img" alt="...">
+    Call Us
+    </a>
+    <a href="mailto: {{email.address}}">
+    <img src={{email.img}} class="footer-img" alt="...">
+    Email Us
+    </a>
+    <a href="{{instagram.address}}">
+    <img src={{instagram.img}} class="footer-img" alt="...">
+    Instagram
+    </a>
+  </div>
+</div>
+</template>

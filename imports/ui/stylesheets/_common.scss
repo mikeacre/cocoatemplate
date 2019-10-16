@@ -1,12 +1,27 @@
 //
 // COMMON
 //
+// #DFC1BD #DBA1A0
+// #D7B0AE
+
+
 body{
   padding-top: 60px;
+  background-color: #B2C5BF;
 }
 
 a{
   color: theme-color('link');
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+h1{
+  font-family: cursive;
+  text-shadow: 1px 1px #fff;
+  color: #761025;
+  margin: auto;
 }
 // Variables
 

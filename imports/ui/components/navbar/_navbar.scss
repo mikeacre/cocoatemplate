@@ -1,3 +1,28 @@
+$back-img: url('/img/banner.jpg');
+$secondary: #761025;
+
 .navbar{
-    height:60px;
+    height:80px;
+    background-image: $back-img;
+    background-size: cover;
+    box-shadow: 0 1px 10px 5px black;
+
+    .nav-link{
+      color: $secondary;
+      font-size: 20px;
+      float: right;
+      margin: 10px;
+    }
+    .order-now{
+      border-style: solid;
+      border-color: $secondary;
+      border-width: 3px;
+    }
+
+    .bg{
+      margin-left: -1rem;
+      margin-right: -1rem;
+      background-image: $back-img;
+      background-size: cover;
+    }
 }

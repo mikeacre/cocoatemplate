@@ -1,0 +1,16 @@
+<!-- make tiles that will display images from an array randomly -->
+<!-- make two arrays one for current images other for unused images
+this could be a js componenet that will be reused
+and formatted with html -->
+
+<template name="Gallery">
+  <div class="row">
+
+    {{#each imgs}}
+      <div class="col-md-4">
+        <img alt="picture" src={{src}} class="img-fluid">
+      </div>
+    {{/each}}
+    
+  </div>
+</template>

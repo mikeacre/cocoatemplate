@@ -1,13 +1,18 @@
+
+<!-- change background image to overlay with bootstrap -->
+<!-- be able to set image in js file -->
+<!-- maybe trying making the jumbotron also a card??? -->
+
 <template name="Header">
-    <div class="jumbotron header-jumbotron d-flex flex-column">
-        <h1 class="display-3 mt-auto text-secondary">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for
-                        calling extra attention to featured content or information.</p>
-        <hr class="my-2">
-        <p>It uses utility classes for typography and
-            spacing to space content out within the larger container.</p>
-        <p class="lead mb-auto">
-        <a class="btn btn-secondary btn-lg" href="#!" role="button">Get Quote</a>
-        </p>
+    <div class="jumbotron header-jumbotron bg-white row" style={{style}}>
+      <div class='col-lg-8 my-auto'>
+        <h1 class="display-1 text-secondary">{{title}}</h1>
+
+        <p class='display-4 text-white'>{{subtext}}</p>
+      </div>
+      <div class='col-lg-4 d-none d-lg-block right'>
+          <!-- make this into a carousel??? that goes up and down not left n right -->
+          <img src={{highlightImg}} class="img-fluid" alt="">
+      </div>
     </div>
 </template>

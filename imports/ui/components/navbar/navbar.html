@@ -1,5 +1,44 @@
+<!-- provide at least one dropdown example -->
+<!-- make background structure cleaner -->
+<!-- how to routing work with meteor?? oh no -->
+
+
 <template name="Navbar">
-    <nav class="navbar fixed-top navbar-dark bg-primary">
-    <span class="navbar-brand h-100"><img src="/img/logo.png" class="img-fluid h-100" alt=""></span><a class="navbar-brand" href="#!">Fixed top</a>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <span class="navbar-brand h-100" href="#">
+          <h1 class="h-100 text-secondary">
+            <img src={{logo}} class="img-fluid h-100" alt="">
+            {{title}}
+          </h1>
+        </span>
+
+        <button class="navbar-toggler navbar-dark bg-secondary" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse bg" id="navbarToggler">
+          <ul class="navbar-nav mx-auto">
+
+            {{#each links}}
+              {{> link}}
+            {{/each}}
+
+          </ul>
+
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link order-now" href={{order.url}}>
+                {{order.text}}
+              </a>
+            </li>
+          </ul>
+        </div>
+
     </nav>
+</template>
+
+<template name="link">
+  <li class="nav-item">
+    <a class="nav-link" href={{url}}>{{text}}</a>
+  </li>
 </template>

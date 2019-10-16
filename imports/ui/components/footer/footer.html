@@ -1,19 +1,54 @@
-<template name="Footer">
-    <footer class="bg-primary text-white page-footer font-small blue pt-4">
-        <div class="container-fluid text-center text-md-left">
+<!-- put the links at the bottom to send a call, email, instagram -->
 
-            <div class="row">
-                <div class="col-sm-12">
-                    <h5 class="text-uppercase">Last Chance for a cake</h5>
-                    <p>Contact us today to get started!</p>
+
+<template name="Footer">
+    <footer class="bg-secondary text-white page-footer pt-4">
+        <div class="container-fluid">
+
+            <div class="row text-center">
+
+              {{#each sideImg}}
+                <div class="col-md-1">
+                  <img src="{{src}}" class="side-img d-none d-lg-block" alt="...">
+                </div>
+                {{/each}}
+
+
+                <div class="col-md-4">
+                  <!-- Refactor -->
+                  <h5 class="text-uppercase">{{contactus}}</h5>
+                  <a href="tel: {{phone.num}}">
+                  <img src={{phone.img}} class="footer-img" alt="...">
+                  Call Us
+                  </a>
+                  <a href="mailto: {{email.address}}">
+                  <img src={{email.img}} class="footer-img" alt="...">
+                  Email Us
+                  </a>
+                  <a href="{{instagram.address}}">
+                  <img src={{instagram.img}} class="footer-img" alt="...">
+                  Instagram
+                  </a>
+
+                  <p>{{subtext}}</p>
 
                 </div>
+
+
+                {{#each sideImg}}
+                  <div class="col-md-1">
+                    <img src="{{src}}" class="side-img d-none d-lg-block" alt="...">
+                  </div>
+                  {{/each}}
+
+            </div>
+
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                <a href="">Cocoa Decor</a>
             </div>
 
 
         </div>
-        <div class="footer-copyright text-center py-3">© 2019 Copyright:
-            <a href="">Cocoa Decor</a>
-        </div>
+
     </footer>
 </template>

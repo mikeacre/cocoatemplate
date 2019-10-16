@@ -6,4 +6,8 @@
 // of their existing font size variables
 $font-size-xs: 0.75rem;
 
+$enable-responsive-font-sizes: true;
+
 // Transition timing functions
+
+@import '{}/node_modules/bootstrap/scss/bootstrap';

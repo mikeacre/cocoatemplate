@@ -1,0 +1,14 @@
+<template name="CardRow">
+  <div class='row top'>
+
+      {{#each cards}}
+      <div class=" col-sm-4 card cake-type shadow-lg">
+        <img src={{imgsrc}} class="card-img-fluid" alt="...">
+        <div class="card-img-overlay d-flex">
+          <h1 class="display-4 card-title">{{title}}</h1>
+        </div>
+      </div>
+      {{/each}}
+
+  </div>
+</template>
