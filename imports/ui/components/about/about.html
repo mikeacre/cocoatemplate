@@ -11,125 +11,103 @@
     <img src={{logo}} class="img-fluid d-none d-xl-block" alt="">
     </div>
 
-    <div class="row">
+    <div class="row base">
+
       <h1 class="display-2">Cocoa Decor</h1>
-    </div>
-
-
-
-    <div class="row pt-4 base">
+      <div class="w-100"></div>
+      {{> contact}}
 
     <div class="col-md-12 d-flex flex-column"  id="base">
-      <div class="m-auto sideMenu">
+      <div class="m-auto p-2 sideMenu">
 
-          <button class="btn btn-warning">
-            <a href='#base'></a>
-          </button>
-          <button class="btn btn-warning">
-            <a href='#second'></a>
-          </button>
-          <button class="btn btn-warning">
-            <a href='#full'></a>
-          </button>
+            <button id="first" class="btn active">●</button>
+            <button id="second" class="btn">●</button>
+            <button id="third" class="btn">●</button>
+
       </div>
-      <div class="container main">
 
-
-
-
-      <div class="row main">
+      <div id='first' class="row">
         <!-- trying to put in selectors to get to each section -->
 
-        <div class="col-md-4 d-none d-md-block">
+        <div class="col-md-4 mt-0 d-none d-md-block">
           <img src="/img/basecake.png" class="img-fluid" alt="">
         </div>
-      <div class="col-md-8 text">
-        <div class="row pl-4">
+        <div class="col-md-8 text">
+          <div id="float" class="col-md-9 pt-2 row">
+            <div id="card" class="card col">
+              <img src={{person}} class="img-fluid card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Person1</h5>
+                <p class="card-text text-justify">{brief description}</p>
+              </div>
+            </div>
+
+            <div id="card" class="card col">
+              <img src={{person}} class="img-fluid card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Person2</h5>
+                <p class="card-text">{brief description}</p>
+              </div>
+            </div>
+
+        </div>
         <h1 class="display-4">Our Base</h1>
         <div class="w-100"></div>
-        <strong>Who we are!</strong>
-        </div>
+        <h1>Who we are!</h1>
 
-        <div class="col-md-6 row">
-          <div class="card col">
-        <img src={{person}} class="img-fluid card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Person1</h5>
-            <p class="card-text">{brief description}</p>
-          </div>
-          </div>
-
-          <div class="card col">
-        <img src={{person}} class="img-fluid card-img-top" alt="">
-        <div class="card-body">
-          <h5 class="card-title">Person2</h5>
-          <p class="card-text">{brief description}</p>
-        </div>
-          </div>
+          <p id='wrapMe' class="text-justify">
+            In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from?Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from?
+          </p>
 
         </div>
-
-          <p class="text-wrap text-justify">In a free hour, when our power of choice is untrammelled and when nothing prevents our
-Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our
-Where does it come from?
-In a free hour, when our power of choice is untrammelled and when nothing prevents our
-Where does it come from?
-In a free hour, when our power of choice is untrammelled and when nothing prevents our
-Where does it come from?
-In a free hour, when our power of choice is untrammelled and when nothing prevents our
-Where does it come from?Where does it come from?
-In a free hour, when our power of choice is untrammelled and when nothing prevents our
-Where does it come from?
-In a free hour, when our power of choice is untrammelled and when nothing prevents our
-Where does it come from?
-</p></div>
-
-
-
-      <!-- figure out to create max height -->
-
-
-
-
       </div>
 
 
-      <div class="row main">
-        <div class="col-md-4 d-none d-md-block">
+      <div id='second' class="row main">
+        <div class="col-md-4 mt-0 d-none d-md-block">
           <img src="/img/inspocake.png" class="img-fluid" alt="">
         </div>
-      <div class="col-md-4">
-        <h1 class="display-4">Our Inspiration</h1>
-        <strong>How we got here</strong>
-        <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our</p>
-      </div>
-      <div class="col-md-4 w-100 ">
-        <div>
-          <img src='/img/logo.png' alt=''>
+        <div class="col-md-8 text">
+          <div id="float" class="col-md-6 pt-2 row">
+            <img src="/img/logo.png" class="img-fluid w-100" alt="">
+        </div>
+
+
+          <h1 class="display-4">Our Inspiration</h1>
+          <div class="w-100"></div>
+          <h1>How we got here</h1>
+
+          <p id='wrapMe' class="text-justify">
+            In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from?
+          </p>
+
         </div>
       </div>
-      </div>
 
-      <div class="row main">
-        <div class="col-md-4 d-none d-md-block">
+      <div id='third' class="row main">
+        <div class="col-md-4 mt-0 d-none d-md-block">
           <img src="/img/fullcake.png" class="img-fluid" alt="">
 
         </div>
-      <div class="col-md-4">
+        <div class="col-md-8 text">
+
+          <div id="float" class="col-md-6 pt-2 row">
+            <img src="/img/logo.png" class="img w-100 float-right" alt="">
+
+        </div>
         <h1 class="display-4">Our Style</h1>
-        <strong>How we got here</strong>
-        <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our</p>
-      </div>
-      <div class="col-md-4 w-100">
-        <div>
-          <img src='/img/logo.png' alt=''>
+        <div class="w-100"></div>
+        <h1>What's the secret?</h1>
+          <p id='wrapMe' class="text-justify">
+            In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from? In a free hour,
+          </p>
+
         </div>
       </div>
-      </div>
 
-      </div>
 
-      {{> contact}}
+
+
 
     </div>
 
@@ -138,21 +116,18 @@ Where does it come from?
 </template>
 
 <template name="contact">
-  <div class="row contact mx-auto align-items-end">
-  <div>
-    <h1> Contact Us</h1>
-    <a href="tel: {{phone.num}}">
+  <div class="mx-auto">
+    <a class='col-sm' href="tel: {{phone.num}}">
     <img src={{phone.img}} class="footer-img" alt="...">
     Call Us
     </a>
-    <a href="mailto: {{email.address}}">
+    <a class='col-sm' href="mailto: {{email.address}}">
     <img src={{email.img}} class="footer-img" alt="...">
     Email Us
     </a>
-    <a href="{{instagram.address}}">
+    <a class='col' href="{{instagram.address}}">
     <img src={{instagram.img}} class="footer-img" alt="...">
     Instagram
     </a>
-  </div>
 </div>
 </template>

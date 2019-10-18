@@ -18,5 +18,4 @@ Template.Header.onRendered(function () {
     var backgroundimg = "url('http://www.crylaughheal.com/wp-content/uploads/2016/02/wedding-cakes-shop.jpg')";
 
     template.find('.jumbotron').style.backgroundImage = backgroundimg;
-
 });

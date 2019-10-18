@@ -1,5 +1,3 @@
-<!-- clean up form itself put in required fields and direct data -->
-
 <template name="SubmitQuote">
     <div class="container py-4 text-center my-3">
         <div class="row">
@@ -9,11 +7,15 @@
         </div>
 
         <form class="home" id="home">
+
           <div class="h" id="phase">
             <h1>What is on the inside matters</h1>
             <strong>Choose your flavor and filling</strong>
-            <div class="row mx-auto w-50 pb-2">
 
+            <!-- create component for phase -->
+            <!-- then insert each question -->
+
+            <div class="row mx-auto w-75 pb-2">
               <div class="col-sm-6">
                 <label for="">Select a Flavor</label>
                 <select class="form-control required" id="flavor">
@@ -31,6 +33,7 @@
                 </select>
               </div>
             </div>
+
           </div>
 
           <div class="h" id='phase'>
@@ -49,7 +52,7 @@
 
               <div class="col-sm-7">
                 <label for="">Tell us about your cake idea</label>
-                <textarea class="form-control" id="idea" value='' placeholder=""></textarea>
+                <textarea class="form-control" id="idea" value='' placeholder="This field is required"></textarea>
                 <small class="text-muted">
                   If you forget something we can still fix it later
                 </small>
@@ -68,24 +71,49 @@
               </div>
               <div class="col-md-6">
                 <label>Last Name</label>
-                <input required type="text" class="form-control" id="lastname">
+                <input type="text" class="form-control" id="lastname">
               </div>
               <div class="col-sm-12 pt-2">
                 <label>E-mail Address</label>
-                <input required type="email" class="form-control" id="email">
+                <input type="email" class="form-control" id="email">
               </div>
             </div>
           </div>
 
         </form>
 
-        <div class="h" id="phase">
+        <div name="confirmation" class="h" id="phase">
           <h1 class="display-4">We are excited to work with you!</h1>
           <h1>We will get you a quote within the next few days</h1>
 
-          <img src='/img/logo.png' class='img-fluid' alt=''>
+          <!-- put in information 'like a receipt' -->
+          <div class="bg-white mx-auto w-75">
+            <h3> Your Order </h3>
+            <div class="col-md-4 mx-auto">
+              <div class="my-2">
+                <img src="https://via.placeholder.com/200" class="img-fluid mr-auto" id='img-preview' alt="">
+              </div>
+            </div>
+            <div class="col-md-8 mx-auto">
+              <div class="row">
+                <p class="col-md-4" id="nameFirst">First Name: </p>
+                <p class="col-md-4" id="nameLast">Last Name: </p>
+              </div>
+              <div class="row">
+                <p class="col-md-4" id="fillingData">Filling: </p>
+                <p class="col-md-4" id="flavorData">Flavor: </p>
+              </div>
+              <div class="col-sm-12">
+                <p id="emailData">Email: </p>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <p id="ideaData">Your idea: </p>
+            </div>
+          </div>
           <div class="w-100"></div>
-          <button onclick="window.location.reload(true);" class="btn btn-warning">Home</button>
+
+            <button id='refresh' class="btn btn-warning">Refresh</button>
 
         </div>
 
@@ -97,4 +125,8 @@
         </div>
 
     </div>
+</template>
+
+<template name="phase">
+
 </template>
