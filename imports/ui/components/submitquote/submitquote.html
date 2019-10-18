@@ -1,10 +1,4 @@
-<!-- this is going to need the js file and to send json data to the db -->
-
-<!-- make the form be completed in stages -->
-<!-- stage1: who are you  -->
-<!-- stage2:it's on the inside tht matters -->
-<!-- stage3: got any pics ;) -->
-<!-- stage4: could you give any extra details -->
+<!-- clean up form itself put in required fields and direct data -->
 
 <template name="SubmitQuote">
     <div class="container py-4 text-center my-3">
@@ -22,21 +16,20 @@
 
               <div class="col-sm-6">
                 <label for="">Select a Flavor</label>
-                <select name="flavor" class="form-control" id="">
-                  <option value="">Red Velvet</option>
-                  <option value="">Chocolate</option>
-                  <option value="">Vanilla</option>
+                <select class="form-control required" id="flavor">
+                  <option value="Red Velvet">Red Velvet</option>
+                  <option value="Chocolate">Chocolate</option>
+                  <option value="Vanilla">Vanilla</option>
                 </select>
               </div>
               <div class="col-sm-6">
                 <label for="">Select a Filling</label>
-                <select name="filling" class="form-control" id="">
-                  <option value="">Red Velvet</option>
-                  <option value="">Chocolate</option>
-                  <option value="">Vanilla</option>
+                <select class="form-control required" value="Red Velvet" id="filling">
+                  <option value="Red Velvet">Red Velvet</option>
+                  <option value="Chocolate">Chocolate</option>
+                  <option value="Vanilla">Vanilla</option>
                 </select>
               </div>
-
             </div>
           </div>
 
@@ -45,22 +38,22 @@
             <strong>Help us understand what you have in mind</strong>
             <div class="row mx-auto w-75 pb-2">
 
-              <div class="col-sm-4">
+              <div class="col-sm-5">
                 <div class="my-2">
-                  <img src="https://via.placeholder.com/200" class="img-fluid mr-auto" alt="">
+                  <img src="https://via.placeholder.com/200" class="img-fluid mr-auto" id='img-upload' alt="">
                 </div>
-                <button class="btn btn-warning w-100">Add Photos</button>
+                <span class="btn btn-warning w-100">
+                  <input type="file" id='pic' name="pic" accept="image/*">
+                </span>
               </div>
 
-              <div class="col-sm-8">
+              <div class="col-sm-7">
                 <label for="">Tell us about your cake idea</label>
-                <textarea class="form-control" id="" value="" placeholder="">
-                </textarea>
+                <textarea class="form-control" id="idea" value='' placeholder=""></textarea>
                 <small class="text-muted">
                   If you forget something we can still fix it later
                 </small>
               </div>
-
             </div>
           </div>
 
@@ -70,31 +63,38 @@
             <div class="row mx-auto w-50 pb-2">
 
               <div class="col-md-6">
-                <label for="">First Name</label>
-                <input type="text" class="form-control" id="firstname" value="" placeholder="">
+                <label>First Name</label>
+                <input type="text" class="form-control" id="firstname">
               </div>
               <div class="col-md-6">
-                <label for="">Last Name</label>
-                <input type="text" class="form-control" id="" value="" placeholder="">
+                <label>Last Name</label>
+                <input required type="text" class="form-control" id="lastname">
               </div>
               <div class="col-sm-12 pt-2">
-                <label for="">E-mail Address</label>
-                <input type="text" class="form-control" id="" value="" placeholder="">
-              </div>
-
-              <div class="col-sm-12 w-50 mx-auto pt-2">
-                <button class="btn btn-warning w-100">Request Quote!</button>
+                <label>E-mail Address</label>
+                <input required type="email" class="form-control" id="email">
               </div>
             </div>
           </div>
 
-          <div style="overflow:auto;">
-            <div style="float:right;">
-              <button type="button" id="prevBtn">Previous</button>
-              <button type="button" id="nextBtn">Next</button>
-            </div>
-          </div>
         </form>
-        
+
+        <div class="h" id="phase">
+          <h1 class="display-4">We are excited to work with you!</h1>
+          <h1>We will get you a quote within the next few days</h1>
+
+          <img src='/img/logo.png' class='img-fluid' alt=''>
+          <div class="w-100"></div>
+          <button onclick="window.location.reload(true);" class="btn btn-warning">Home</button>
+
+        </div>
+
+        <div class="steps pt-4">
+          <div>
+            <button class="btn btn-warning" id="prevBtn">Previous</button>
+            <button type='submit' class="btn btn-warning" id="nextBtn">Next</button>
+          </div>
+        </div>
+
     </div>
 </template>

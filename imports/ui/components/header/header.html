@@ -4,7 +4,7 @@
 <!-- maybe trying making the jumbotron also a card??? -->
 
 <template name="Header">
-    <div class="jumbotron header-jumbotron bg-white row" style={{style}}>
+    <div class="jumbotron header-jumbotron row" style={{style}}>
       <div class='col-lg-8 my-auto'>
         <h1 class="display-1 text-secondary">{{title}}</h1>
 
@@ -12,6 +12,7 @@
       </div>
       <div class='col-lg-4 d-none d-lg-block right'>
           <!-- make this into a carousel??? that goes up and down not left n right -->
+          <!-- remove white background as an option easy with js dom-->
           <img src={{highlightImg}} class="img-fluid" alt="">
       </div>
     </div>

@@ -2,15 +2,14 @@
 
 <template name="Home">
 
-{{> Header}}
+  {{> Header}}
 
+  <div class="container-fluid cont w-100">
+    {{> CardRow}}
+    {{> AboutComp}}
+    {{> GalleryComp}}
+  </div>
 
-<div class="container-fluid cont w-100">
-  {{> CardRow}}
-  {{> About}}
+  {{>SubmitQuote}}
 
-
-  {{> Gallery}}
-</div>
-{{>SubmitQuote}}
 </template>

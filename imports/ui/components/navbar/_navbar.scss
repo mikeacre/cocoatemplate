@@ -1,21 +1,22 @@
 $back-img: url('/img/banner.jpg');
-$secondary: #761025;
+// set background image in js
+// see if you can make it visible only when nav open
 
 .navbar{
     height:80px;
     background-image: $back-img;
     background-size: cover;
-    box-shadow: 0 1px 10px 5px black;
+    box-shadow: 0 1px 5px 3px black;
 
     .nav-link{
-      color: $secondary;
+      color: theme-color(secondary);
       font-size: 20px;
       float: right;
       margin: 10px;
     }
     .order-now{
       border-style: solid;
-      border-color: $secondary;
+      border-color: theme-color(secondary);
       border-width: 3px;
     }
 

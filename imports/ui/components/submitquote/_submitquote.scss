@@ -1,6 +1,10 @@
-#phase,{
-  max-height: 20rem;
+.h{
   display: none;
+
+  img{
+    height: 10rem;
+    width: 10rem;
+  }
 }
 
 .home{
@@ -8,23 +12,18 @@
   overflow: hidden;
 }
 
+.invalid {
+  background-color: #ffdddd;
+}
+
 
 
 
 button {
-  background-color: #4CAF50;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 17px;
-  font-family: Raleway;
+  padding: 2rem;
   cursor: pointer;
 }
 
 button:hover {
   opacity: 0.8;
-}
-
-#prevBtn {
-  background-color: #bbbbbb;
 }

@@ -5,6 +5,7 @@ import './footer.html'
 // put code here ya dummy
 
 Template.Footer.helpers({
+  // reduce number of side images make into a function that returns a json src
   sideImg: [
     {src: 'https://upload.wikimedia.org/wikipedia/commons/4/49/Cartoon_Happy_Birthday_Cake.svg'},
     {src: 'https://upload.wikimedia.org/wikipedia/commons/4/49/Cartoon_Happy_Birthday_Cake.svg'},

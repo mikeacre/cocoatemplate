@@ -10,5 +10,5 @@ Template.Navbar.helpers({
     { text: 'Gallery', url: '/gallery'},
     { text: 'About', url: '/about' },
   ],
-  order: {text: 'Get Quote', url:'/create'},
+  order: {text: 'Get Quote', url:'/order'},
 });

@@ -1,4 +1,4 @@
-<template name="About">
+<template name="AboutComp">
   <div class="container-fluid p-4">
     <div class="row justify-content-center">
     <img src={{logo}} class="img-fluid" alt="">
@@ -20,54 +20,77 @@
     <div class="row pt-4 base">
 
     <div class="col-md-12 d-flex flex-column"  id="base">
+      <div class="m-auto sideMenu">
+
+          <button class="btn btn-warning">
+            <a href='#base'></a>
+          </button>
+          <button class="btn btn-warning">
+            <a href='#second'></a>
+          </button>
+          <button class="btn btn-warning">
+            <a href='#full'></a>
+          </button>
+      </div>
       <div class="container main">
+
+
 
 
       <div class="row main">
         <!-- trying to put in selectors to get to each section -->
-        <!-- <div class="col-md-1 my-auto sideMenu">
 
-            <button class="btn btn-warning w-50">
-              <a href='#base'></a>
-            </button>
-            <button class="btn btn-warning w-50">
-              <a href='#second'></a>
-            </button>
-            <button class="btn btn-warning w-50">
-              <a href='#full'></a>
-            </button>
-        </div> -->
         <div class="col-md-4 d-none d-md-block">
           <img src="/img/basecake.png" class="img-fluid" alt="">
         </div>
-      <div class="col-md-4">
+      <div class="col-md-8 text">
         <div class="row pl-4">
         <h1 class="display-4">Our Base</h1>
         <div class="w-100"></div>
         <strong>Who we are!</strong>
         </div>
-        <div class="w-100"></div>
-          <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our</p>
 
-      </div>
-        <div class="col-lg-4 d-flex card-deck">
-          <div class="card col-sm-6">
+        <div class="col-md-6 row">
+          <div class="card col">
         <img src={{person}} class="img-fluid card-img-top" alt="">
           <div class="card-body">
             <h5 class="card-title">Person1</h5>
-            <p class="card-text">I do stuff that person2 does too</p>
+            <p class="card-text">{brief description}</p>
           </div>
           </div>
 
-          <div class="card col-sm-6">
+          <div class="card col">
         <img src={{person}} class="img-fluid card-img-top" alt="">
         <div class="card-body">
           <h5 class="card-title">Person2</h5>
-          <p class="card-text">I do person2 stuff</p>
+          <p class="card-text">{brief description}</p>
         </div>
           </div>
 
         </div>
+
+          <p class="text-wrap text-justify">In a free hour, when our power of choice is untrammelled and when nothing prevents our
+Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our
+Where does it come from?
+In a free hour, when our power of choice is untrammelled and when nothing prevents our
+Where does it come from?
+In a free hour, when our power of choice is untrammelled and when nothing prevents our
+Where does it come from?
+In a free hour, when our power of choice is untrammelled and when nothing prevents our
+Where does it come from?Where does it come from?
+In a free hour, when our power of choice is untrammelled and when nothing prevents our
+Where does it come from?
+In a free hour, when our power of choice is untrammelled and when nothing prevents our
+Where does it come from?
+</p></div>
+
+
+
+      <!-- figure out to create max height -->
+
+
+
+
       </div>
 
 

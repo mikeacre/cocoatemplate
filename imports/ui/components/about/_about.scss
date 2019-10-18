@@ -2,19 +2,38 @@
   max-height: 35em;
   scroll-behavior: smooth;
 
+
   .main{
-    height: 25em;
+    max-height: 25em;
     overflow: scroll;
 
-    .card-deck{
-      margin: 0;
+    .text{
+      max-height: 25em;
+      overflow: scroll;
+    }
+    .people{
+      margin:auto
+    }
+
+    .card{
       padding: 0;
 
-      .card{
-        padding: 0;
+      .card-img-top{
+        margin: auto;
+        height: 100px;
+        width: 100px;
       }
     }
   }
+}
 
+.footer-img{
+  height: 50px;
+  width: 50px;
+}
 
+.card-img-top{
+  margin: auto;
+  height: 100px;
+  width: 100px;
 }

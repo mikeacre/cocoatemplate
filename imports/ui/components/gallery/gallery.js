@@ -2,7 +2,10 @@ import { Template } from 'meteor/templating';
 
 import './gallery.html'
 
-Template.Gallery.helpers({
+// figure out way to format if number of images is not even
+// add classes depending on number of images??
+
+Template.GalleryComp.helpers({
   imgs: [
     {src: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(117).jpg'},
     {src: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(98).jpg'},

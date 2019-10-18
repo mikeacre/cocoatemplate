@@ -1,9 +1,11 @@
-img{
-  height: 100%;
-  object-fit: cover;
-}
-
 .col-md-4{
   padding: 0;
   margin: auto;
+}
+
+
+// why does this effect the header
+img{
+  height: 100%;
+  object-fit: cover;
 }
