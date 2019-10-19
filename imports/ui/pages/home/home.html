@@ -1,15 +1,13 @@
 <!-- make a new page for the order now with the SubmitQuote component-->
 
 <template name="Home">
+  {{> CardRow}}
 
   {{> Header}}
 
-  <div class="container-fluid cont w-100">
-    {{> CardRow}}
-    {{> AboutComp}}
-    {{> GalleryComp}}
-  </div>
+    {{>SubmitQuote}}
 
-  {{>SubmitQuote}}
+    {{> GalleryComp}}
+
 
 </template>

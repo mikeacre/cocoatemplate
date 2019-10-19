@@ -1,21 +1,9 @@
 <template name="AboutComp">
   <div class="container-fluid p-4">
-    <div class="row justify-content-center">
-    <img src={{logo}} class="img-fluid" alt="">
-    <img src={{logo}} class="img-fluid d-none d-md-block" alt="">
-    <img src={{logo}} class="img-fluid d-none d-md-block" alt="">
-    <img src={{logo}} class="img-fluid d-none d-md-block" alt="">
-    <img src={{logo}} class="img-fluid d-none d-lg-block" alt="">
-    <img src={{logo}} class="img-fluid d-none d-lg-block" alt="">
-    <img src={{logo}} class="img-fluid d-none d-xl-block" alt="">
-    <img src={{logo}} class="img-fluid d-none d-xl-block" alt="">
-    </div>
-
     <div class="row base">
 
       <h1 class="display-2">Cocoa Decor</h1>
       <div class="w-100"></div>
-      {{> contact}}
 
     <div class="col-md-12 d-flex flex-column"  id="base">
       <div class="m-auto p-2 sideMenu">
@@ -92,7 +80,9 @@
         <div class="col-md-8 text">
 
           <div id="float" class="col-md-6 pt-2 row">
-            <img src="/img/logo.png" class="img w-100 float-right" alt="">
+            <strong class="text-justify pl-2">
+              In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from? In a free hour, when our power of choice is untrammelled and when nothing prevents our Where does it come from? In a free hour,
+            </strong>
 
         </div>
         <h1 class="display-4">Our Style</h1>
@@ -104,30 +94,9 @@
 
         </div>
       </div>
-
-
-
-
-
     </div>
+
 
     </div>
   </div>
-</template>
-
-<template name="contact">
-  <div class="mx-auto">
-    <a class='col-sm' href="tel: {{phone.num}}">
-    <img src={{phone.img}} class="footer-img" alt="...">
-    Call Us
-    </a>
-    <a class='col-sm' href="mailto: {{email.address}}">
-    <img src={{email.img}} class="footer-img" alt="...">
-    Email Us
-    </a>
-    <a class='col' href="{{instagram.address}}">
-    <img src={{instagram.img}} class="footer-img" alt="...">
-    Instagram
-    </a>
-</div>
 </template>

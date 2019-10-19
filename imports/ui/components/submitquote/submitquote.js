@@ -21,12 +21,13 @@ function onSubmit(){
   document.getElementById("nameLast").innerHTML += formData[1];
   document.getElementById("emailData").innerHTML += formData[2];
   // img
-  var reader = new FileReader();
-  reader.onload = function(e) {
-    document.getElementById('img-preview').src = e.target.result;
-    console.log('imgtime')
-  };
-  reader.readAsDataURL(img);
+  if(img){
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      document.getElementById('img-preview').src = e.target.result;
+    };
+    reader.readAsDataURL(img);
+  }
 
   document.getElementById("ideaData").innerHTML += formData[4];
   document.getElementById("fillingData").innerHTML += formData[5];
@@ -144,7 +145,7 @@ Template.SubmitQuote.events({
 
   'click button#refresh': function(){
     formData = [];
-    window.location.reload()
+    window.location.assign('/');
     onSubmit();
   }
 

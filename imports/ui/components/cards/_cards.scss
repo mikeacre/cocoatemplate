@@ -9,7 +9,7 @@ $color: #761025;
     border-bottom-width: .3rem;
     border-color: $color;
     padding: 0;
-    max-height: 200px;
+    max-height: 150px;
 
     img{
       height: 100%;
@@ -18,5 +18,11 @@ $color: #761025;
     .card-img-overlay:hover{
       background-color: rgba(255, 255, 255, .2)
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card{
+      max-width: 33%;
   }
 }
